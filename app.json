@@ -3,21 +3,23 @@
   "name": "LoanVision",
   "publisher": "Default publisher",
   "version": "1.0.0.0",
-  "brief": "",
-  "description": "",
-  "privacyStatement": "",
-  "EULA": "",
-  "help": "",
-  "url": "",
-  "logo": "",
+  "brief": "Developer Testing",
+  "description": "Developer Testing Task",
+  "privacyStatement": "https://loan-vision.com",
+  "EULA": "https://loan-vision.com",
+  "help": "https://loan-vision.com",
+  "url": "https://loan-vision.com",
+  "logo": "img/logo.png",
+  "contextSensitiveHelpUrl": "https://loan-vision.com",
+  "applicationInsightsConnectionString": "connectionstringhere",
   "dependencies": [],
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "22.0.0.0",
   "idRanges": [
     {
-      "from": 50100,
-      "to": 50149
+      "from": 14135100,
+      "to": 14135999
     }
   ],
   "resourceExposurePolicy": {
@@ -27,6 +29,7 @@
   },
   "runtime": "11.0",
   "features": [
-    "NoImplicitWith"
+    "NoImplicitWith",
+    "TranslationFile"
   ]
 }
