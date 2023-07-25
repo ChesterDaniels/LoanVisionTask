@@ -1,10 +1,10 @@
-codeunit 14135100 "Posting Helper"
+codeunit 14135100 "CD Posting Helper"
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnAfterFillInvoicePostBuffer', '', true, true)]
     local procedure SetAddionalGroupingIdentifier(var InvoicePostBuffer: Record "Invoice Post. Buffer" temporary; PurchLine: Record "Purchase Line")
     begin
         InvoicePostBuffer."Additional Grouping Identifier" := Format(PurchLine."Line No.");
-        InvoicePostBuffer.Comment := PurchLine.Comment;
+        InvoicePostBuffer.Comment := PurchLine."CD Comment";
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", 'OnPostInvoicePostBufferLineOnAfterCopyFromInvoicePostBuffer', '', true, true)]

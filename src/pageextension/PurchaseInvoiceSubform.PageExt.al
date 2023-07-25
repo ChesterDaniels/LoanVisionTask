@@ -1,13 +1,14 @@
-pageextension 14135100 "Purchase Invoice Subform" extends "Purch. Invoice Subform"
+pageextension 14135100 "CD Purchase Invoice Subform" extends "Purch. Invoice Subform"
 {
     layout
     {
         addafter(Description)
         {
-            field(Comment; Rec.Comment)
+            field("CD Comment"; Rec."CD Comment")
             {
                 ApplicationArea = all;
                 ToolTip = 'Comments';
+                Caption = 'Comment';
             }
         }
     }

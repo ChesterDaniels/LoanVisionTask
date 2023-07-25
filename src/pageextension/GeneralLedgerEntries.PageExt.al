@@ -1,10 +1,10 @@
-pageextension 14135104 "General Ledger Entries" extends "General Ledger Entries"
+pageextension 14135104 "CD General Ledger Entries" extends "General Ledger Entries"
 {
     layout
     {
         addafter(Description)
         {
-            field(Comment; Rec.Comment)
+            field("CD Comment"; Rec.Comment)
             {
                 ApplicationArea = Basic, Suite;
                 ToolTip = 'Comment';
